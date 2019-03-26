@@ -1,5 +1,3 @@
-
-getwd()
 # This script builds the managers dataset
 # and populates it with data
 
@@ -72,6 +70,11 @@ names(managers)[11] <- "Answer total"
 
 # Show 
 str(managers)
-#importing the MoreData.csv
+
+new_managers_data <- read.csv(file = "MoreData.csv")
+str(new_managers_data)
+
+head(managers)
+head(new_managers_data)
 
 
